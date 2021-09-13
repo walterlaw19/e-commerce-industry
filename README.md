@@ -82,7 +82,7 @@ Use the `schema.sql` file in the `db` folder to create your database using MySQL
 
 Your database should contain the following four models, including the requirements listed for each model:
 
-* `Category`
+<!-- * `Category`
 
   * `id`
     * Integer
@@ -146,7 +146,7 @@ Your database should contain the following four models, including the requiremen
 
   * `tag_id`
     * Integer
-    * References the `tag` model's `id`
+    * References the `tag` model's `id` -->
 
 ### Associations
 
