@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const sequelize = require('../../config/connection');
+const sequelize = require('../../config/connection');  // IS THIS NEEDED???????*******************************
 const { Category, Product } = require('../../models');
-const { restore } = require('../../models/Tag');
+const { restore } = require('../../models/Tag');       // IS THIS NEEDED???????*******************************
 
 // The `/api/categories` endpoint
 
