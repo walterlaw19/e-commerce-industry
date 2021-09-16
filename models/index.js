@@ -17,12 +17,15 @@ Category.hasMany(Product, {
 // Products belongToMany Tags (through ProductTag) COMPLETED WG
 Product.belongsToMany(Tag, {
   through: ProductTag,
-  foreignKey: 'product_id'
+  as: 'product_tags',
+  foreignKey: 'product_id',
+  onDelete: 'CASCADE'
 });
 
 // Tags belongToMany Products (through ProductTag) COMPLETED WG
 Tag.belongsToMany(Product, {
   through: ProductTag,
+  as: 'product_tags',
   foreignKey: 'tag_id'
 })
 
